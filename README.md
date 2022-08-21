@@ -5,4 +5,4 @@
 * **Model date**: August, 2022
 * **Model version**: 1.0
 * **License**: MIT
-* **Model implementation code**: 
+* **Model implementation code**: [DNSC6301_Project_Group18.ipynb] (https://colab.research.google.com/drive/19CubuD9J1-aCoqvC00TwOzWrnZGpesbq?usp=sharing)
