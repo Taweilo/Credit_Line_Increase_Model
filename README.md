@@ -58,4 +58,5 @@
 ### Quantitative Analysis
 
 #### Correlation Heatmap
-![Correlation Heatmap] (Heat Map.png)
+![Heat Map](https://user-images.githubusercontent.com/111590512/185941580-685f9338-12ef-456c-8eca-373ed42cae83.png)
+
