@@ -102,15 +102,22 @@ The protected group for discrimination testing sex is female and reference group
 In the above workings for AIR, accuracy was tested with a 0.15 probability cutoff which led to white vs. hispanic ratio to be lower than 0.8. To improve the AIR ratio the probability cutoff was increased to 0.18, which improved the AIR for the required groups.
 
 White proportion accepted: 0.735
+
 Hispanic proportion accepted: 0.613
+
 Hispanic-to-White AIR: 0.83
 
+
 White proportion accepted: 0.735
+
 Black proportion accepted: 0.626
+
 Black-to-White AIR: 0.85
 
 White proportion accepted: 0.735
+
 Asian proportion accepted: 0.739
+
 Asian-to-White AIR: 1.00
 
 
