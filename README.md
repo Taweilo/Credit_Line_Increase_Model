@@ -66,14 +66,14 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 Metrics of discrimination:
 
-1. AUC - The AUC ROC curve assists in peformance measurement and is one of the most important
+##### 1. AUC - The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance.
 
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
 
 
 
-2. Adverse Impact Ratio (AIR) - Calculated by = Protected group acceptance rate / Controlled group acceptance rate
+##### 2. Adverse Impact Ratio (AIR) - Calculated by = Protected group acceptance rate / Controlled group acceptance rate
                                                
 
 
@@ -91,6 +91,8 @@ Metrics of discrimination:
 
 
 
-### SOURCE:
-AUC ROC -
+#### SOURCE:
+##### AUC ROC -
 Definition extarcted from - https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
+
+
