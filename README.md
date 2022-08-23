@@ -66,7 +66,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 Metrics of discrimination:
 
-1. AUC
+1. AUC - The AUC ROC curve assists in peformance measurement and is one of the most important
 
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
@@ -82,3 +82,14 @@ Metrics of discrimination:
 | Training Data    |                        |                           |
 | Validation Data  |                        |                           |
 | Test Data        |                        |                           |
+
+
+
+
+
+
+
+
+
+###SOURCE:
+AUC ROC - Definition extarcted from - https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
