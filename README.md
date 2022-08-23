@@ -103,15 +103,15 @@ In the above workings for AIR, accuracy was tested with a 0.15 probability cutof
 
 White proportion accepted: 0.735
 Hispanic proportion accepted: 0.613
-hispanic-to-white AIR: 0.83
+Hispanic-to-White AIR: 0.83
 
 White proportion accepted: 0.735
 Black proportion accepted: 0.626
-black-to-white AIR: 0.85
+Black-to-White AIR: 0.85
 
 White proportion accepted: 0.735
 Asian proportion accepted: 0.739
-asian-to-white AIR: 1.00
+Asian-to-White AIR: 1.00
 
 
 
