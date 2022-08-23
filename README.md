@@ -29,7 +29,7 @@
 | **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
 | **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
 
-* **Source of training data**: GWU Blackboard
+* **Source of training data**: GWU Blackboard, Patrick Hall jphall@email.gwu.edu
 * **How training data was divided into training and validation data**: 50% training, 25% validation, 25% test
 * **Number of rows in training and validation data**:
   * Training rows: 15,000
@@ -66,7 +66,9 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 Metrics of discrimination:
 
-##### 1. AUC - The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance.
+##### 1. AUC ROC:
+The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance. In simple terms, the higher the AUC the better the model is at predicting between two classes of data.
+
 
 
 
@@ -81,7 +83,8 @@ Metrics of discrimination:
 
 
 
-##### 2. Adverse Impact Ratio (AIR) - Calculated by = Protected group acceptance rate / Controlled group acceptance rate
+##### 2. Adverse Impact Ratio (AIR):
+Calculated by = Protected group acceptance rate / Controlled group acceptance rate
 
 ![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
