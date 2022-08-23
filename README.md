@@ -68,20 +68,29 @@ Metrics of discrimination:
 
 ##### 1. AUC - The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance.
 
+
+
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
-
+| Data Type        |         AUC            | 
+| ---------------- | ---------------------  | 
+| Training Data    |                        |                           
+| Validation Data  |                        |                           
+| Test Data        |                        |        
 
 
 ##### 2. Adverse Impact Ratio (AIR) - Calculated by = Protected group acceptance rate / Controlled group acceptance rate
+
+![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
+
                                                
 
 
-| Data Type        |         AIR            |           AUC             |
-| ---------------- | ---------------------  | ------------------------  |
-| Training Data    |                        |                           |
-| Validation Data  |                        |                           |
-| Test Data        |                        |                           |
+| Data Type        |         AIR            | 
+| ---------------- | ---------------------  | 
+| Training Data    |                        |                           
+| Validation Data  |                        |                           
+| Test Data        |                        |     
 
 
 
