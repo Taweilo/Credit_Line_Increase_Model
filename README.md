@@ -105,19 +105,19 @@ White proportion accepted: 0.735
 
 Hispanic proportion accepted: 0.613
 
-**Hispanic-to-White AIR: 0.83
+**Hispanic-to-White AIR: 0.83**
 
 White proportion accepted: 0.735
 
 Black proportion accepted: 0.626
 
-**Black-to-White AIR: 0.85
+**Black-to-White AIR: 0.85**
 
 White proportion accepted: 0.735
 
 Asian proportion accepted: 0.739
 
-**Asian-to-White AIR: 1.00
+**Asian-to-White AIR: 1.00**
 
 
 
