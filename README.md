@@ -88,6 +88,12 @@ Calculated by = Protected group acceptance rate / Controlled group acceptance ra
 
 ![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
+![White vs Hispanic1024_1](https://user-images.githubusercontent.com/111590512/186239522-83abb38b-1ceb-4cfd-a0a0-5aa8aae0409e.jpg)
+![White vs Black1024_1](https://user-images.githubusercontent.com/111590512/186239549-7c71eee2-e4c4-4e3f-a55e-437da86e513d.jpg)
+![White vs Asian1024_1](https://user-images.githubusercontent.com/111590512/186239590-f1c0a5ea-abbf-45af-bd41-ff81c663324f.jpg)
+![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186239634-1872514c-5fb8-4302-b3ea-22ddbe89acda.jpg)
+
+
                                                
 
 
