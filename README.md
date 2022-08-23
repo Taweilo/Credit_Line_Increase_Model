@@ -64,7 +64,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 #### Correlation Heatmap
 ![Heat Map](https://user-images.githubusercontent.com/111590512/185942386-95eece6c-45d5-483b-a582-e665e5cfa083.png)
 
-Metrics of discrimination:
+### Metrics of discrimination:
 
 ##### 1. AUC ROC:
 The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance. In simple terms, the higher the AUC the better the model is at predicting between whether an individual would default on payment or pay on time.
@@ -99,13 +99,19 @@ The protected group for discrimination testing sex is female and reference group
 
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186240768-2ed0fd0b-0ba0-4f15-b829-d3f19d88f4ec.jpg)
 
+In the above workings for AIR, accuracy was tested with a 0.15 probability cutoff which led to white vs. hispanic ratio to be lower than 0.8. To improve the AIR ratio the probability cutoff was increased to 0.18, which improved the AIR for the required groups.
 
+White proportion accepted: 0.735
+Hispanic proportion accepted: 0.613
+hispanic-to-white AIR: 0.83
 
+White proportion accepted: 0.735
+Black proportion accepted: 0.626
+black-to-white AIR: 0.85
 
-
-
-
-
+White proportion accepted: 0.735
+Asian proportion accepted: 0.739
+asian-to-white AIR: 1.00
 
 
 
