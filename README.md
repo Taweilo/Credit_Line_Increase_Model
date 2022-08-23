@@ -88,6 +88,10 @@ The adverse impact ratio computes the negative effect a biased selection process
 
 ![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
+AIR is associated with the convenient 4/5ths, or 0.8, cutoff threshold. AIR values below 0.8 can be considered evidence of illegal discrimination in many lending or employment scenarios in the U.S.
+
+For the dataset that has been trained, validated and tested, discrimination tests have been performed for sex and race. The protected groups for race are hispanic, black and asian and reference group is white. Whereas for the protected group for sex is female and protected group is male As per the workings, it is understood that the AIR percentage is dangerously below the accepted level of 0.8 for pro, where as AIR ratios for the 
+
 ![White vs Hispanic1024_1](https://user-images.githubusercontent.com/111590512/186240311-a5132e05-4689-4ceb-8ce0-0da23cdc4acc.jpg)
 
 ![White vs Asian1024_1](https://user-images.githubusercontent.com/111590512/186240313-857701f1-c813-4162-880c-0d5ed2b79b6c.jpg)
@@ -115,7 +119,7 @@ The adverse impact ratio computes the negative effect a biased selection process
 
 
 #### SOURCE:
-##### AUC ROC -
-Definition extarcted from - https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
+AUC understanding: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
+AIR understanding: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
 
