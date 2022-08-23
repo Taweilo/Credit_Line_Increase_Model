@@ -67,10 +67,14 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 Metrics of discrimination:
 
 1. AUC
+2. 
+![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
-2. Adverse Impact Ratio (AIR) - Calculated by = Protected group acceptance rate
-                                                -------------------------------
-                                                Controlled group acceptance rate
+
+
+
+2. Adverse Impact Ratio (AIR) - Calculated by = Protected group acceptance rate / Controlled group acceptance rate
+                                               
 
 
 | Data Type        |         AIR            |           AUC             |
