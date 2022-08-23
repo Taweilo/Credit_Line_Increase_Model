@@ -64,8 +64,8 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 #### Correlation Heatmap
 ![Heat Map](https://user-images.githubusercontent.com/111590512/185942386-95eece6c-45d5-483b-a582-e665e5cfa083.png)
 
-| Data Type        |      AIR      |       AUC      |
-| ---------------- | ------------- | -------------- |
-| Training Data    |               |                |
-| Validation Data  |               |                |
-| Test Data        |               |                |
+| Data Type        |         AIR            |           AUC             |
+| ---------------- | ---------------------  | ------------------------  |
+| Training Data    |                        |                           |
+| Validation Data  |                        |                           |
+| Test Data        |                        |                           |
