@@ -101,6 +101,7 @@ The protected group for discrimination testing sex is female and reference group
 
 ### Bias Remediation
 
+According to the article by Pew Research Center, it is noted that blacks and hispanics face great difficulty in getting home loans as compared to whites and asians. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants The model that has been trained, validated and tested is in line with this statement. 
 In the above workings for AIR, accuracy was tested with a 0.15 probability cutoff which led to white vs. hispanic ratio to be lower than 0.8. To improve the AIR ratio the probability cutoff was increased to 0.18, which improved the AIR for the required groups.
 
 White proportion accepted: 0.735
