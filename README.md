@@ -36,7 +36,7 @@
   * Validation rows: 7,500
 
 ### Test Data
-* **Source of test data**: GWU Blackboard
+* **Source of test data**: GWU Blackboard, Patrick Hall jphall@email.gwu.edu
 * **Number of rows in test data**: 7,500
 * **State any differences in columns between training and test data**: None
 ### Model details
@@ -77,6 +77,8 @@ Metrics of discrimination:
 | Training Data    |                        |                           
 | Validation Data  |                        |                           
 | Test Data        |                        |        
+
+
 
 
 ##### 2. Adverse Impact Ratio (AIR) - Calculated by = Protected group acceptance rate / Controlled group acceptance rate
