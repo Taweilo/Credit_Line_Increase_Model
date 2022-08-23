@@ -134,3 +134,4 @@ AUC understanding: https://towardsdatascience.com/understanding-auc-roc-curve-68
 
 AIR understanding: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
 
+Peew Research Center: https://www.pewresearch.org/fact-tank/2017/01/10/blacks-and-hispanics-face-extra-challenges-in-getting-home-loans/
