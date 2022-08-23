@@ -84,7 +84,7 @@ The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in
 
 
 ##### 2. Adverse Impact Ratio (AIR):
-Calculated by = Protected group acceptance rate / Controlled group acceptance rate
+The adverse impact ratio computes the negative effect a biased selection process has on protected groups. This is computed by dividing the protected group acceptance rate / controlled group acceptance rate.
 
 ![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
