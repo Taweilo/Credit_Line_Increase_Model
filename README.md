@@ -70,16 +70,13 @@ Metrics of discrimination:
 The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance. In simple terms, the higher the AUC the better the model is at predicting between whether an individual would default on payment or pay on time.
 
 
-
-
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
-| Data Type        |         AUC            | 
-| ---------------- | ---------------------  | 
-| Training Data    |                        |                           
-| Validation Data  |                        |                           
-| Test Data        |                        |        
-
+|    Data Type     |   AUC    | 
+| ---------------- | ---------| 
+| Training Data    | 0.7837   |                           
+| Validation Data  | 0.7496	  |                        
+| Test Data        | 0.7438   |        
 
 
 
@@ -103,14 +100,6 @@ The protected group for discrimination testing sex is female and reference group
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186240768-2ed0fd0b-0ba0-4f15-b829-d3f19d88f4ec.jpg)
 
 
-                                               
-
-
-| Data Type        |         AIR            | 
-| ---------------- | ---------------------  | 
-| Training Data    |                        |                           
-| Validation Data  |                        |                           
-| Test Data        |                        |     
 
 
 
