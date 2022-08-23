@@ -99,7 +99,7 @@ The protected group for discrimination testing sex is female and reference group
 
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186240768-2ed0fd0b-0ba0-4f15-b829-d3f19d88f4ec.jpg)
 
-#### 3.Bias Remediation
+### Bias Remediation
 
 In the above workings for AIR, accuracy was tested with a 0.15 probability cutoff which led to white vs. hispanic ratio to be lower than 0.8. To improve the AIR ratio the probability cutoff was increased to 0.18, which improved the AIR for the required groups.
 
@@ -120,6 +120,11 @@ White proportion accepted: 0.735
 Asian proportion accepted: 0.739
 
 **Asian-to-White AIR: 1.00**
+
+
+
+### Ethical Considerations:
+
 
 
 
