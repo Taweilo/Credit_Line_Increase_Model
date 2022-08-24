@@ -138,7 +138,7 @@ Asian proportion accepted: 0.739
 
 ### Ethical Considerations:
 
-*1. Negative impacts of using the model:*
+**1. Negative impacts of using the model:**
 
 *Math or Software problems*
 
@@ -147,7 +147,7 @@ Asian proportion accepted: 0.739
 
 
 
-*2. Potential uncertainities relating to the impacts of using the model:*
+**2. Potential uncertainities relating to the impacts of using the model:**
 
 *Math or Software problems*
 
@@ -155,7 +155,7 @@ Asian proportion accepted: 0.739
 *Real world risks*
 
 
-*3. Unexpected results:*
+**3. Unexpected results:**
 
 
 #### SOURCE:
