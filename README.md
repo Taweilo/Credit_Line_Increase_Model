@@ -147,7 +147,10 @@ Asian proportion accepted: 0.739
 
 
 *Real world risks*
+
 While the results of the data has provided with insightful understanding of credit increase and related biases in testing, it is important to note that there are some real world risks which have not been factored into the working. One such example would be that of security and privacy. In today's world data protection is one of the top priorities for any dataset that is being used for numerous purposes. This particular dataset is dense in information and contains confidential details such as demographic information, bill payments and loan balance payments. 
+
+Thw model also applies to every individual in the same approach without taking into consideration any specific circumstances which may actually result in the end output being different.
 
 
 
