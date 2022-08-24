@@ -173,3 +173,6 @@ AIR understanding: https://nbviewer.org/github/jphall663/interpretable_machine_l
 Peew Research Center: https://www.pewresearch.org/fact-tank/2017/01/10/blacks-and-hispanics-face-extra-challenges-in-getting-home-loans/
 
 Sex discrimination AIR interpretation: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
+
+A Combinatorial Approach to Fairness Testing of
+Machine Learning Models - https://csrc.nist.gov/csrc/media/Projects/automated-combinatorial-testing-for-software/documents/preprint-iwct-22-fairness.pdf
