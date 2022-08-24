@@ -91,14 +91,14 @@ AIR is associated with the convenient 4/5ths, or 0.8, cutoff threshold. AIR valu
 ##### Racial discrimination:
 For the dataset that has been trained, validated and tested, discrimination tests have been performed for sex and race. The protected groups for race are hispanic, black and asian and reference group is white. As per the workings, it is understood that the AIR percentage is dangerously below the accepted level of 0.8 for white vs. hispanic, where as AIR ratios for the other race groups is within acceptable level of 0.8 to 1.
 
-![White vs Hispanic1024_1](https://user-images.githubusercontent.com/111590512/186240311-a5132e05-4689-4ceb-8ce0-0da23cdc4acc.jpg)
+![White vs Hispanic1024_1](https://user-images.githubusercontent.com/111590512/186240311-a5132e05-4689-4ceb-8ce0-0da23cdc4acc.jpg) ![White vs Asian1024_1](https://user-images.githubusercontent.com/111590512/186240313-857701f1-c813-4162-880c-0d5ed2b79b6c.jpg)
 
-![White vs Asian1024_1](https://user-images.githubusercontent.com/111590512/186240313-857701f1-c813-4162-880c-0d5ed2b79b6c.jpg)
+
 
 ![White vs Black1024_1](https://user-images.githubusercontent.com/111590512/186240314-081b92c3-2423-466f-9e3b-ed6d02aeefc2.jpg)
 
 
-# Sex discrimination:
+##### Sex discrimination:
 The protected group for discrimination testing sex is female and reference group is male. The AIR ratio has provided favourable results females. 
 
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186240768-2ed0fd0b-0ba0-4f15-b829-d3f19d88f4ec.jpg)
