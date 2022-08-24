@@ -104,7 +104,10 @@ The adverse impact ratio computes the negative effect a biased selection process
 AIR is associated with the convenient 4/5ths, or 0.8, cutoff threshold. AIR values below 0.8 can be considered evidence of illegal discrimination in many lending or employment scenarios in the U.S.
 
 **Racial bias**
-For the dataset that has been trained, validated and tested, discrimination tests have been performed for sex and race. The protected groups for race are hispanic, black and asian and reference group is white. As per the workings, it is understood that the AIR percentage is dangerously below the accepted level of 0.8 for white vs. hispanic, where as AIR ratios for the other race groups is within acceptable level of 0.8 to 1.
+
+The protected groups for racial bias testing are hispanic, black and asian and the reference group is white. From our confusion matrices and AIR calculation, the 
+hispanic-to-white AIR is below the benchmark of 0.8. Although, the black-to-white impact ratio is greater than 0.80, there is room for improvement. According to the Office of Federal Contract Compliance Programs, the agency will require strong additional supporting evidence when the impact ratio is between 0.8 and 0.9
+The white-to-asian AIR of 1.0 is favorable. 
 
 ![White vs Hispanic1024_1](https://user-images.githubusercontent.com/111590512/186423198-297eacc1-f9dc-4728-a144-7f66d09321ac.jpg)
 
@@ -113,7 +116,8 @@ For the dataset that has been trained, validated and tested, discrimination test
 ![White vs Asian1024_1](https://user-images.githubusercontent.com/111590512/186423696-13a3cbff-3501-4e13-9312-b00414798f3b.jpg)
 
 **Gender bias**
-The protected group for discrimination testing sex is female and reference group is male. The resulting AIR value is favourable for women as it exceeds the best case scenario by 0.6. This indicates that a higher percentage of individuals in the protected group were awarded a loan than in the reference group, this value would likely not indicate a discrimination problem in most scenarios. The magnitude of the marginal effect is also relatively small, another sign that discrimination concerning sex is low under the model.
+
+The protected group for gender bias testing is female and reference group is male. The resulting AIR value is favourable for women as it exceeds the best case scenario by 0.6. This indicates that a higher number of females were awarded a loan as compared to males. The magnitude of the marginal effect is also relatively small, another sign that discrimination with respect to gender is low under the model.
 
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186424070-ddc103f8-0ba1-4f75-a7be-493e52350635.jpg)
 
@@ -196,3 +200,6 @@ Sex discrimination AIR interpretation: https://nbviewer.org/github/jphall663/int
 
 A Combinatorial Approach to Fairness Testing of
 Machine Learning Models - https://csrc.nist.gov/csrc/media/Projects/automated-combinatorial-testing-for-software/documents/preprint-iwct-22-fairness.pdf
+
+Office of Federal Contract Compliance Programs
+- https://www.dol.gov/agencies/ofccp/faqs/practical-significance
