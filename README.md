@@ -165,7 +165,7 @@ Thw model also applies to every individual in the same approach without taking i
 **3. Unexpected results:**
 
 
-#### SOURCE:
+#### Sources:
 AUC understanding: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
 AIR understanding: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
