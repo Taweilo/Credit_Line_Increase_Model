@@ -62,26 +62,34 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ```
 
 
-### Quantitative Analysis
+### QUANTATIVE ANALYSIS
 
-#### WORK FLOW:
+#### Model Work FLow:
 
-* The data to be analyzed was uploaded to Colab Jupyter. Determination of various aspects of data, calculation of descriptive statistics and Pearson correlation matrix and plotting of data on histograms was completed.
-* The decision tree model was trained after dividing the data into training, validation and test as well as excluding the demographic variables.
-* Discrimination testing of the model was performed through adverse impact ratio (AIR) computation and analysis.
-* Following the results of the above procedure, remediation of the data discovered was carried out through change in cut off and recalculation of AIR.
+**1.	Load and analyze data:**
 
+The credit line increase data was loaded using google collab file upload. Basic data analysis was performed to identify as shape of data, get column names, find missing values, and generate descriptive statistics. Pearson correlation matrix was calculated to find pairwise correlation of the columns in data. All columns in the data are visually represented as histograms. A correlation heatmap figure is generated to represent the correlation matrix.
 
 #### Correlation Heatmap
 ![Heat Map](https://user-images.githubusercontent.com/111590512/185942386-95eece6c-45d5-483b-a582-e665e5cfa083.png)
 
-### Metrics of discrimination:
+**2.	Train a decision tree model:**
 
-##### 1. AUC ROC:
+The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.
+Testing data which is a separate set of data to test the model after training helps us determine how the model will perform in the real world. We train 12 different models using decision trees and calculate the ROC AUC for each model. Plot tree depth vs training and validation AUC.
+
+**AUC ROC:**
 The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance. In simple terms, the higher the AUC the better the model is at predicting between whether an individual would default on payment or pay on time.
 
 
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
+
+Viewing the results as a table, we can identify that maximum validation AUC is at depth 6.
+
+**Plot Variable Importance**
+![Variable importance](https://user-images.githubusercontent.com/111590512/186531478-9e5afb03-3f42-489f-96d6-3513abf4abc2.png)
+
+Lastly, we calculate test AUC. 
 
 |    Data Type     |   AUC    | 
 | ---------------- | ---------| 
@@ -165,7 +173,7 @@ Thw model also applies to every individual in the same approach without taking i
 **3. Unexpected results:**
 
 
-#### Sources:
+#### SOURCE:
 AUC understanding: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
 AIR understanding: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
