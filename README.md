@@ -106,7 +106,7 @@ For the dataset that has been trained, validated and tested, discrimination test
 ![White vs Asian1024_1](https://user-images.githubusercontent.com/111590512/186423696-13a3cbff-3501-4e13-9312-b00414798f3b.jpg)
 
 ##### Sex discrimination:
-The protected group for discrimination testing sex is female and reference group is male. The AIR ratio has provided favourable results females. 
+The protected group for discrimination testing sex is female and reference group is male. The resulting AIR value is favourable for women as it exceeds the best case scenario by 0.6. This indicates that a higher percentage of individuals in the protected group were awarded a loan than in the reference group, this value would likely not indicate a discrimination problem in most scenarios. The magnitude of the marginal effect is also relatively small, another sign that discrimination concerning sex is low under the model.
 
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186424070-ddc103f8-0ba1-4f75-a7be-493e52350635.jpg)
 
@@ -164,3 +164,5 @@ AUC understanding: https://towardsdatascience.com/understanding-auc-roc-curve-68
 AIR understanding: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
 
 Peew Research Center: https://www.pewresearch.org/fact-tank/2017/01/10/blacks-and-hispanics-face-extra-challenges-in-getting-home-loans/
+
+Sex discrimination AIR interpretation: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
