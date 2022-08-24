@@ -61,6 +61,14 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 ### Quantitative Analysis
 
+#### WORK FLOW:
+
+* The data to be analyzed was uploaded to Colab Jupyter. Determination of various aspects of data, calculation of descriptive statistics and Pearson correlation matrix and plotting of data on histograms was completed.
+* The decision tree model was trained after dividing the data into training, validation and test as well as excluding the demographic variables.
+* Discrimination testing of the model was performed through adverse impact ratio (AIR) computation and analysis.
+* Following the results of the above procedure, remediation of the data discovered was carried out through change in cut off and recalculation of AIR.
+
+
 #### Correlation Heatmap
 ![Heat Map](https://user-images.githubusercontent.com/111590512/185942386-95eece6c-45d5-483b-a582-e665e5cfa083.png)
 
