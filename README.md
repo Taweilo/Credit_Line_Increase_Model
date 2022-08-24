@@ -129,22 +129,6 @@ Biased behavior of ML models has adverse effects on society. With our initial pr
 With our information, we can try to remediate biases by recalculating AIR and confusion matrices by pushing the cutoff from 0.15 to 0.18. Next, we redo the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we are going to try it across 12 different models and observe both performance and fairness indicators to pick a balance between the two.
 The below tables show how AIR values specifically for Hispanic-to-white and black-to-white are positively impacted after pushing the cutoff to 0.18
 
-
-|    **Data Type** |   **AUC**| 
-| ---------------- | ---------| 
-| Training Data    | 0.7837   |                           
-| Validation Data  | 0.7496	  |                        
-| Test Data        | 0.7438   |      
-
-|  **Gender group**  |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
-| -------------------| ---------------------  | -------------------- |
-| White vs. Hispanic | 0.76                   | 0.83                 |     
-| White vs. Black    | 0.82  	                | 0.85                 |  
-| White vs. Asian    | 1.00                   | 1.00                 |  
-
-
-
-
 White proportion accepted: 0.735
 
 Hispanic proportion accepted: 0.613
@@ -162,6 +146,20 @@ White proportion accepted: 0.735
 Asian proportion accepted: 0.739
 
 **Asian-to-White AIR: 1.00**
+
+
+|    **Data Type** |   **AUC**| 
+| ---------------- | ---------| 
+| Training Data    | 0.7837   |                           
+| Validation Data  | 0.7496	  |                        
+| Test Data        | 0.7438   |      
+
+|  **Gender group**  |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
+| -------------------| ---------------------  | -------------------- |
+| White vs. Hispanic | 0.76                   | 0.83                 |     
+| White vs. Black    | 0.82  	                | 0.85                 |  
+| White vs. Asian    | 1.00                   | 1.00                 |  
+
 
 ![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
