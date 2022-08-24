@@ -75,8 +75,7 @@ The credit line increase data was loaded using google collab file upload. Basic 
 
 **2.	Train a decision tree model:**
 
-The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.
-Testing data which is a separate set of data to test the model after training helps us determine how the model will perform in the real world. We train 12 different models using decision trees and calculate the ROC AUC for each model. Plot tree depth vs training and validation AUC.
+The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.Testing data which is a separate set of data to test the model after training helps us determine how the model will perform in the real world. We train 12 different models using decision trees and calculate the ROC AUC for each model. Plot tree depth vs training and validation AUC.
 
 **AUC ROC:**
 The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance. In simple terms, the higher the AUC the better the model is at predicting between whether an individual would default on payment or pay on time.
@@ -98,16 +97,15 @@ Lastly, we calculate test AUC.
 | Test Data        | 0.7438   |        
 
 
+**3.	Test the model for discrimination**
+According to the article, A Combinatorial Approach to Fairness Testing of Machine Learning Models, machine learning models could exhibit biased behavior, or algorithmic discrimination, resulting in unfair or discriminatory outcomes. It is importance to not only consider the performance of your model but also other factors such as fairness and security. 
 
-##### 2. Adverse Impact Ratio (AIR):
+**Adverse Impact Ratio (AIR):**
 The adverse impact ratio computes the negative effect a biased selection process has on protected groups. This is computed by dividing the protected group acceptance rate / controlled group acceptance rate.
-
-![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
 AIR is associated with the convenient 4/5ths, or 0.8, cutoff threshold. AIR values below 0.8 can be considered evidence of illegal discrimination in many lending or employment scenarios in the U.S.
 
-
-##### Racial discrimination:
+##### Racial bias:
 For the dataset that has been trained, validated and tested, discrimination tests have been performed for sex and race. The protected groups for race are hispanic, black and asian and reference group is white. As per the workings, it is understood that the AIR percentage is dangerously below the accepted level of 0.8 for white vs. hispanic, where as AIR ratios for the other race groups is within acceptable level of 0.8 to 1.
 
 ![White vs Hispanic1024_1](https://user-images.githubusercontent.com/111590512/186423198-297eacc1-f9dc-4728-a144-7f66d09321ac.jpg)
@@ -116,16 +114,36 @@ For the dataset that has been trained, validated and tested, discrimination test
 
 ![White vs Asian1024_1](https://user-images.githubusercontent.com/111590512/186423696-13a3cbff-3501-4e13-9312-b00414798f3b.jpg)
 
-##### Sex discrimination:
+##### Gender bias:
 The protected group for discrimination testing sex is female and reference group is male. The resulting AIR value is favourable for women as it exceeds the best case scenario by 0.6. This indicates that a higher percentage of individuals in the protected group were awarded a loan than in the reference group, this value would likely not indicate a discrimination problem in most scenarios. The magnitude of the marginal effect is also relatively small, another sign that discrimination concerning sex is low under the model.
 
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186424070-ddc103f8-0ba1-4f75-a7be-493e52350635.jpg)
 
-### Bias Remediation
 
-According to the article by Pew Research Center, it is noted that blacks and hispanics face great difficulty in getting home loans as compared to whites and asians. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants The model that has been trained, validated and tested is in line with this statement. Additionally, no model should be relied on solely based on accuracy!
+**4.	Remediate discovered discrimination**
 
-In the above workings for AIR, accuracy was tested with a 0.15 probability cutoff which led to white vs. hispanic ratio to be lower than 0.8. To improve the AIR ratio the probability cutoff was increased to 0.18, which improved the AIR for the required groups.
+According to an article by Pew Research Center, people who belong to Black and Hispanic racial groups face more difficulty in getting approved for home loans as compared to White and Asian people. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants which can be also observed in our initial model. 
+
+Biased behavior of ML models has adverse effects on society. With our initial probability cut off 0.15, the Hispanic-to-white AIR falls below the minimum acceptable value of 0.80 and the black-to-white AIR is just over 0.80 by 0.02.
+
+With our information, we can try to remediate biases by recalculating AIR and confusion matrices by pushing the cutoff from 0.15 to 0.18. Next, we redo the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we are going to try it across 12 different models and observe both performance and fairness indicators to pick a balance between the two.
+The below tables show how AIR values specifically for Hispanic-to-white and black-to-white are positively impacted after pushing the cutoff to 0.18
+
+
+|    **Data Type** |   **AUC**| 
+| ---------------- | ---------| 
+| Training Data    | 0.7837   |                           
+| Validation Data  | 0.7496	  |                        
+| Test Data        | 0.7438   |      
+
+|  **Gender group**  |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
+| -------------------| ---------------------  | -------------------- |
+| White vs. Hispanic | 0.76                   | 0.83                 |     
+| White vs. Black    | 0.82  	                | 0.85                 |  
+| White vs. Asian    | 1.00                   | 1.00                 |  
+
+
+
 
 White proportion accepted: 0.735
 
@@ -145,7 +163,7 @@ Asian proportion accepted: 0.739
 
 **Asian-to-White AIR: 1.00**
 
-
+![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
 ### Ethical Considerations:
 
