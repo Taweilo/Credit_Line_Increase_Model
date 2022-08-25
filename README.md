@@ -153,7 +153,7 @@ The below tables indicate the the final values, of the metrics for all data: tra
 
 ##### **1. Negative impacts of using the model:**
 
-*Math or Software problems*
+*Math or Software problems*: 
 
 
 
@@ -166,7 +166,8 @@ The below tables indicate the the final values, of the metrics for all data: tra
 
 *Real world risks*: While training the model has provided us with an insight of how biases affect credit line increase, we have not factored in real-world risks. One such risk would be security and data privacy. The risk of customer data being leaked and privacy attacks is not an aspect we have taken into consideration in our pipeline while training the model and exposes it to uncertainities. We would have to measure the risks and apply migitation stratergies to ensure there are no potential uncertainities related to data security and privacy when using the model.
 
-##### **Sources:**
+
+#### **Sources:**
 
 1. Desilver, D., & Bialik, K. (2017, January 10). Blacks and Hispanics face extra challenges in getting home loans. Pew Research Center. https://www.pewresearch.org/fact-tank/2017/01/10/blacks-and-hispanics-face-extra-challenges-in-getting-home-loans/
 
