@@ -68,14 +68,14 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 The credit line increase data was loaded using google collab file upload. Basic data analysis was performed to identify as shape of data, get column names, find missing values, and generate descriptive statistics. Pearson correlation matrix was calculated to find pairwise correlation of the columns in data. All columns in the data are visually represented as histograms. A correlation heatmap figure is generated to represent the correlation matrix.
 
-#### Correlation Heatmap
+##### Correlation Heatmap
 ![Heat Map](https://user-images.githubusercontent.com/111590512/185942386-95eece6c-45d5-483b-a582-e665e5cfa083.png)
 
 #### **2.	Train a decision tree model**
 
 The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.Testing data which is a separate set of data to test the model after training helps us determine how the model will perform in the real world. We train 12 different models using decision trees and calculate the ROC AUC for each model. Plot tree depth vs training and validation AUC.
 
-**AUC ROC**
+##### **AUC ROC**
 
 The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance. In simple terms, the higher the AUC the better the model is at predicting between whether an individual would default on payment or pay on time.
 
@@ -98,12 +98,12 @@ Lastly, we calculate test AUC.
 
 According to the article, A Combinatorial Approach to Fairness Testing of Machine Learning Models, machine learning models could exhibit biased behavior, or algorithmic discrimination, resulting in unfair or discriminatory outcomes. It is importance to not only consider the performance of your model but also other factors such as fairness and security. 
 
-**Adverse Impact Ratio (AIR)**
+##### **Adverse Impact Ratio (AIR)**
 The adverse impact ratio computes the negative effect a biased selection process has on protected groups. This is computed by dividing the protected group acceptance rate / controlled group acceptance rate.
 
 AIR is associated with the convenient 4/5ths, or 0.8, cutoff threshold. AIR values below 0.8 can be considered evidence of illegal discrimination in many lending or employment scenarios in the U.S.
 
-**Racial bias**
+##### **Racial bias**
 
 The protected groups for racial bias testing are hispanic, black and asian and the reference group is white. From our confusion matrices and AIR calculation, the 
 hispanic-to-white AIR is below the benchmark of 0.8. Although, the black-to-white impact ratio is greater than 0.80, there is room for improvement. According to the Office of Federal Contract Compliance Programs, the agency will require strong additional supporting evidence when the impact ratio is between 0.8 and 0.9
@@ -115,7 +115,7 @@ The white-to-asian AIR of 1.0 is favorable.
 
 ![White vs Asian1024_1](https://user-images.githubusercontent.com/111590512/186423696-13a3cbff-3501-4e13-9312-b00414798f3b.jpg)
 
-**Gender bias**
+##### **Gender bias**
 
 The protected group for gender bias testing is female and reference group is male. The resulting AIR value is favourable for women as it exceeds the best case scenario by 0.6. This indicates that a higher number of females were awarded a loan as compared to males. The magnitude of the marginal effect is also relatively small, another sign that discrimination with respect to gender is low under the model.
 
@@ -151,7 +151,7 @@ The below tables indicate the the final values, of the metrics for all data: tra
 
 #### ETHICAL CONSIDERATIONS
 
-**1. Negative impacts of using the model:**
+##### **1. Negative impacts of using the model:**
 
 *Math or Software problems*
 
@@ -163,7 +163,7 @@ The below tables indicate the the final values, of the metrics for all data: tra
 
 
 
-**2. Potential uncertainities relating to the impacts of using the model:**
+##### **2. Potential uncertainities relating to the impacts of using the model:**
 
 *Math or Software problems*
 
@@ -173,10 +173,10 @@ The below tables indicate the the final values, of the metrics for all data: tra
 
 While the results of the data has provided with insightful understanding of credit increase and related biases in testing, it is important to note that there are some real world risks which have not been factored into the working. One such example would be that of security and privacy. In today's world data protection is one of the top priorities for any dataset that is being used for numerous purposes. This particular dataset is dense in information and contains confidential details such as demographic information, bill payments and loan balance payments. 
 
-**3. Unexpected results:**
+##### **3. Unexpected results:**
 
 
-#### Sources:
+##### Sources:
 AUC understanding: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
 AIR understanding: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
