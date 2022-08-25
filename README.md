@@ -162,7 +162,7 @@ The below tables indicate the final values, of the metrics for all data: trainin
 
 
 
-*Real world risks*: From the model and computed AIR values, it's safe to say that the model's discrimination is not fully remediated. Using a biased model in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to not grant a credit line increase to a hispanic or black person as compared to white or asian. Denying a credit line increase could potentially impact their credit scores. And credit scores further influence several decisions such as getting approved for credit cards, auto loans, home loans, and interest rates. 
+*Real world risks*: From the model and computed AIR values, it's safe to say that the model's discrimination is not fully remediated. Using a biased model in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to not grant a credit line increase to a hispanic or black person as compared to white or asian. Denying a credit line increase could potentially impact their credit scores and credit scores further influence several decisions such as getting approved for credit cards, auto loans, home loans, and interest rates. 
 
 #### **2. Potential uncertainities relating to the impacts of using the model:**
 
