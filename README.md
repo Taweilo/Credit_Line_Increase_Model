@@ -141,15 +141,15 @@ The below tables indicate the final values, of the metrics for all data: trainin
 | Validation Data  | 0.7496	     |                        
 | Test Data        | 0.7438      |      
 
-|  **Race**  |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
+|  **Race**          |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
 | -------------------| ---------------------  | -------------------- |
-| White to Hispanic | 0.76                   | 0.83                 |     
-| White to Black    | 0.82  	                | 0.85                 |  
-| White to Asian    | 1.00                   | 1.00                 |  
+| White to Hispanic  | 0.76                   | 0.83                 |     
+| White to Black     | 0.82  	                | 0.85                 |  
+| White to Asian     | 1.00                   | 1.00                 |  
 
-|  **Gender**  |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
+|  **Gender**       |  **AIR (0.15 cutoff)**  | **AIR (0.18 cutoff)**|
 | -------------------| ---------------------  | -------------------- |
-| Male to Female | 1.06                  | 1.02              |     
+| Male to Female     | 1.06                   | 1.02                 |     
 
 
 ![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
