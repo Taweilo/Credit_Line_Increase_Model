@@ -166,7 +166,7 @@ The below tables indicate the final values, of the metrics for all data: trainin
 
 #### **2. Potential uncertainities relating to the impacts of using the model:**
 
-*Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainity. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient mathametical stratergies, up to date software to allow it to learn from new data to preserve it's predictiveness over time.  
+*Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainity. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient mathematical strategies and up to date software to allow it to learn from new data and preserve it's predictiveness over time.  
 
 
 *Real world risks*: While training the model has provided us with an insight of how biases affect credit line increase, we have not factored in real-world risks. One such risk would be security and data privacy. The risk of customer data being leaked and privacy attacks is not an aspect we have taken into consideration in our pipeline while training the model and exposes it to uncertainities. We would have to measure the risks and apply migitation stratergies to ensure there are no potential uncertainities related to data security and privacy when using the model.
