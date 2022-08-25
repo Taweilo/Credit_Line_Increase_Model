@@ -131,23 +131,7 @@ Biased behavior of ML models has adverse effects on society. With our initial pr
 With our information, we can try to remediate biases by recalculating AIR and confusion matrices by pushing the cutoff from 0.15 to 0.18. Next, we redo the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we are going to try it across 12 different models and observe both performance and fairness indicators to pick a balance between the two.
 The below tables show how AIR values specifically for Hispanic-to-white and black-to-white are positively impacted after pushing the cutoff to 0.18
 
-White proportion accepted: 0.735 
-
-Hispanic proportion accepted: 0.613 
-
-**Hispanic-to-White AIR: 0.83**
-
-White proportion accepted: 0.735 
-
-Black proportion accepted: 0.626 
-
-**Black-to-White AIR: 0.85**
-
-White proportion accepted: 0.735 
-
-Asian proportion accepted: 0.739 
-
-**Asian-to-White AIR: 1.00**
+![AIR_Revised cutoff](https://user-images.githubusercontent.com/111590512/186556387-b9303204-196f-4491-b58e-a5148578ca60.jpg)
 
 The below tables indicate the the final values, of the metrics for all data: training, validation, and test data
 
@@ -172,19 +156,22 @@ The below tables indicate the the final values, of the metrics for all data: tra
 *Math or Software problems*
 
 
+
 *Real world risks*
 
-While the results of the data has provided with insightful understanding of credit increase and related biases in testing, it is important to note that there are some real world risks which have not been factored into the working. One such example would be that of security and privacy. In today's world data protection is one of the top priorities for any dataset that is being used for numerous purposes. This particular dataset is dense in information and contains confidential details such as demographic information, bill payments and loan balance payments. 
 
-Thw model also applies to every individual in the same approach without taking into consideration any specific circumstances which may actually result in the end output being different.
+
+
 
 **2. Potential uncertainities relating to the impacts of using the model:**
 
 *Math or Software problems*
 
 
+
 *Real world risks*
 
+While the results of the data has provided with insightful understanding of credit increase and related biases in testing, it is important to note that there are some real world risks which have not been factored into the working. One such example would be that of security and privacy. In today's world data protection is one of the top priorities for any dataset that is being used for numerous purposes. This particular dataset is dense in information and contains confidential details such as demographic information, bill payments and loan balance payments. 
 
 **3. Unexpected results:**
 
@@ -201,5 +188,4 @@ Sex discrimination AIR interpretation: https://nbviewer.org/github/jphall663/int
 A Combinatorial Approach to Fairness Testing of
 Machine Learning Models - https://csrc.nist.gov/csrc/media/Projects/automated-combinatorial-testing-for-software/documents/preprint-iwct-22-fairness.pdf
 
-Office of Federal Contract Compliance Programs
-- https://www.dol.gov/agencies/ofccp/faqs/practical-significance
+Office of Federal Contract Compliance Programs https://www.dol.gov/agencies/ofccp/faqs/practical-significance
