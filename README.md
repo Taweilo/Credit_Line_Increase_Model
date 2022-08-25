@@ -133,7 +133,7 @@ The below tables show how AIR values specifically for Hispanic-to-white and blac
 
 <img src ="https://user-images.githubusercontent.com/111590512/186556387-b9303204-196f-4491-b58e-a5148578ca60.jpg" width="250" height="200">
 
-The below tables indicate the the final values, of the metrics for all data: training, validation, and test data
+The below tables indicate the final values, of the metrics for all data: training, validation, and test data
 
 |  **Data Type**   |   **AUC**   | 
 | ---------------- | ----------- | 
