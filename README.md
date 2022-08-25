@@ -141,11 +141,11 @@ The below tables indicate the the final values, of the metrics for all data: tra
 | Validation Data  | 0.7496	     |                        
 | Test Data        | 0.7438      |      
 
-|  **Gender group**  |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
+|  **Race**  |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
 | -------------------| ---------------------  | -------------------- |
-| White vs. Hispanic | 0.76                   | 0.83                 |     
-| White vs. Black    | 0.82  	                | 0.85                 |  
-| White vs. Asian    | 1.00                   | 1.00                 |  
+| White to Hispanic | 0.76                   | 0.83                 |     
+| White to Black    | 0.82  	                | 0.85                 |  
+| White to Asian    | 1.00                   | 1.00                 |  
 
 ![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
@@ -157,20 +157,14 @@ The below tables indicate the the final values, of the metrics for all data: tra
 
 
 
-*Real world risks*
-
-It is safe to say that the model has been prepared on some level of gender and racial bias. Although more favourable in the gender bias, not so much in the racial bias. The model had to go through trial and testing of the best accuracy cutoff to avoid any legal breaches. In the calculations for AIR, a detailed understanding can be derived of how the model captures the racial biases wherein the hispanic and black population have a lower AIR as compared to whites and asians. This in turn tends to have an impact on the credit scores of these individuals which places them at a disdvantage while applying for mortgages and other essential loans. 
+*Real world risks*: From the model and computed AIR values, it's safe to say that the model's discrimination is not fully remediated. Using a biased model in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to not grant a credit line increase to a hispanic or black person as compared to white or asian. Denying a credit line increase could potentially impact their credit scores. And credit scores further influence several decisions such as getting approved for credit cards, auto loans, home loans, and interest rates. 
 
 ##### **2. Potential uncertainities relating to the impacts of using the model:**
 
-*Math or Software problems*
+*Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainity. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient mathametical stratergies, up to date software to allow it to learn from new data to preserve it's predictiveness over time.  
 
-As of date, it is understood that the model functions well for the dataset selected. But as we progress in time there is no assurance that the same model can be applied to the more relevant datasets that will be worked on in the present or future.
 
-*Real world risks*
-
-While the results of the data has provided with insightful understanding of credit increase and related biases in testing, it is important to note that there are some real world risks which have not been factored into the working. One such example would be that of security and privacy. In today's world data protection is one of the top priorities for any dataset that is being used for numerous purposes. This particular dataset is dense in information and contains confidential details such as demographic information, bill payments and loan balance payments. The effect of not taking into account the element of privacy and security, exposes the model to uncertainities. 
-
+*Real world risks*: While training the model has provided us with an insight of how biases affect credit line increase, we have not factored in real-world risks. One such risk would be security and data privacy. The risk of customer data being leaked and privacy attacks is not an aspect we have taken into consideration in our pipeline while training the model and exposes it to uncertainities. We would have to measure the risks and apply migitation stratergies to ensure there are no potential uncertainities related to data security and privacy when using the model.
 
 ##### **Sources:**
 
