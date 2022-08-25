@@ -174,6 +174,8 @@ The below tables indicate the the final values, of the metrics for all data: tra
 #### **3. Other unexpected results:**
 
 
+
+
 #### **Sources:**
 
 1. Desilver, D., & Bialik, K. (2017, January 10). Blacks and Hispanics face extra challenges in getting home loans. Pew Research Center. https://www.pewresearch.org/fact-tank/2017/01/10/blacks-and-hispanics-face-extra-challenges-in-getting-home-loans/
