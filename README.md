@@ -135,11 +135,11 @@ The below tables show how AIR values specifically for Hispanic-to-white and blac
 
 The below tables indicate the final values, of the metrics for all data: training, validation, and test data
 
-|  **Data Type**   |   **AUC**   | 
-| ---------------- | ----------- | 
-| Training Data    | 0.7837      |                           
-| Validation Data  | 0.7496	     |                        
-| Test Data        | 0.7438      |      
+|  **Data Type**     |   **AUC**   | 
+| ----------------   | ----------- | 
+| Training Data      | 0.7837      |                           
+| Validation Data    | 0.7496	     |                        
+| Test Data          | 0.7438      |      
 
 |  **Race**          |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
 | -------------------| ---------------------  | -------------------- |
@@ -147,7 +147,7 @@ The below tables indicate the final values, of the metrics for all data: trainin
 | White to Black     | 0.82  	                | 0.85                 |  
 | White to Asian     | 1.00                   | 1.00                 |  
 
-|  **Gender**       |  **AIR (0.15 cutoff)**  | **AIR (0.18 cutoff)**|
+|  **Gender**        |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
 | -------------------| ---------------------  | -------------------- |
 | Male to Female     | 1.06                   | 1.02                 |     
 
