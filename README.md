@@ -173,15 +173,14 @@ While the results of the data has provided with insightful understanding of cred
 
 
 ##### Sources:
-AUC understanding: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
-AIR understanding: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
 
-Peew Research Center: https://www.pewresearch.org/fact-tank/2017/01/10/blacks-and-hispanics-face-extra-challenges-in-getting-home-loans/
+1. Desilver, D., & Bialik, K. (2017, January 10). Blacks and Hispanics face extra challenges in getting home loans. Pew Research Center. https://www.pewresearch.org/fact-tank/2017/01/10/blacks-and-hispanics-face-extra-challenges-in-getting-home-loans/
 
-Sex discrimination AIR interpretation: https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
+2.	Hall, P. (n.d.). Increase Fairness in Your Machine Learning Project with Disparate Impact Analysis using Python and H2O. Jupyter. https://nbviewer.org/github/jphall663/interpretable_machine_learning_with_python/blob/master/dia.ipynb
 
-A Combinatorial Approach to Fairness Testing of
-Machine Learning Models - https://csrc.nist.gov/csrc/media/Projects/automated-combinatorial-testing-for-software/documents/preprint-iwct-22-fairness.pdf
+3.	Narkhede, S. (2018, June 26). Understanding AUC - ROC Curve. Towards Data Science. https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
-Office of Federal Contract Compliance Programs https://www.dol.gov/agencies/ofccp/faqs/practical-significance
+4.	Patel, A. R., Chandrasekaran, J., Lei, Y., Kacker, R. N., & Kuhn, D. R. (2022). A Combinatorial Approach to Fairness Testing of Machine Learning Models. International Workshop on Combinatorial Testing. https://csrc.nist.gov/csrc/media/Projects/automated-combinatorial-testing-for-software/documents/preprint-iwct-22-fairness.pdf
+
+5.	U.S. Department of Labor. (n.d.). Practical Significance in EEO Analysis Frequently Asked Questions. https://www.dol.gov/agencies/ofccp/faqs/practical-significance
