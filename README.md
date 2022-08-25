@@ -131,7 +131,7 @@ Biased behavior of ML models has adverse effects on society. With our initial pr
 With our information, we can try to remediate biases by recalculating AIR and confusion matrices by pushing the cutoff from 0.15 to 0.18. Next, we redo the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we are going to try it across 12 different models and observe both performance and fairness indicators to pick a balance between the two.
 The below tables show how AIR values specifically for Hispanic-to-white and black-to-white are positively impacted after pushing the cutoff to 0.18
 
-<img src ="https://user-images.githubusercontent.com/111590512/186556387-b9303204-196f-4491-b58e-a5148578ca60.jpg" width="250" height="150">
+<img src ="https://user-images.githubusercontent.com/111590512/186556387-b9303204-196f-4491-b58e-a5148578ca60.jpg" width="250" height="200">
 
 The below tables indicate the the final values, of the metrics for all data: training, validation, and test data
 
