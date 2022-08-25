@@ -1,5 +1,5 @@
 # GWU_DNSC6301_Project_Group18
-## Credit Line Increase Model Card
+## CREDIT LINE INCREASE MODEL CARD
 #### Basic Information
 * **People developing model**: 
  Varsha Katam "varsha.katam@gwmail.gwu.edu" ; 
@@ -64,14 +64,14 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 ### QUANTATIVE ANALYSIS AND MODEL WORK FLOW
 
-### **1.	Load and analyze data**
+#### **1.	Load and analyze data**
 
 The credit line increase data was loaded using google collab file upload. Basic data analysis was performed to identify as shape of data, get column names, find missing values, and generate descriptive statistics. Pearson correlation matrix was calculated to find pairwise correlation of the columns in data. All columns in the data are visually represented as histograms. A correlation heatmap figure is generated to represent the correlation matrix.
 
 #### Correlation Heatmap
 ![Heat Map](https://user-images.githubusercontent.com/111590512/185942386-95eece6c-45d5-483b-a582-e665e5cfa083.png)
 
-### **2.	Train a decision tree model**
+#### **2.	Train a decision tree model**
 
 The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.Testing data which is a separate set of data to test the model after training helps us determine how the model will perform in the real world. We train 12 different models using decision trees and calculate the ROC AUC for each model. Plot tree depth vs training and validation AUC.
 
@@ -94,7 +94,7 @@ Lastly, we calculate test AUC.
 | Test Data        | 0.7438   |        
 
 
-### **3.	Test the model for discrimination**
+#### **3.	Test the model for discrimination**
 
 According to the article, A Combinatorial Approach to Fairness Testing of Machine Learning Models, machine learning models could exhibit biased behavior, or algorithmic discrimination, resulting in unfair or discriminatory outcomes. It is importance to not only consider the performance of your model but also other factors such as fairness and security. 
 
@@ -122,7 +122,7 @@ The protected group for gender bias testing is female and reference group is mal
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186424070-ddc103f8-0ba1-4f75-a7be-493e52350635.jpg)
 
 
-### **4.	Remediate discovered discrimination**
+#### **4.	Remediate discovered discrimination**
 
 According to an article by Pew Research Center, people who belong to Black and Hispanic racial groups face more difficulty in getting approved for home loans as compared to White and Asian people. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants which can be also observed in our initial model. 
 
@@ -135,11 +135,11 @@ The below tables show how AIR values specifically for Hispanic-to-white and blac
 
 The below tables indicate the the final values, of the metrics for all data: training, validation, and test data
 
-|    **Data Type** |   **AUC**| 
-| ---------------- | ---------| 
-| Training Data    | 0.7837   |                           
-| Validation Data  | 0.7496	  |                        
-| Test Data        | 0.7438   |      
+|  **Data Type**   |   **AUC**   | 
+| ---------------- | ----------- | 
+| Training Data    | 0.7837      |                           
+| Validation Data  | 0.7496	     |                        
+| Test Data        | 0.7438      |      
 
 |  **Gender group**  |  **AIR (0.15 cutoff)** | **AIR (0.18 cutoff)**|
 | -------------------| ---------------------  | -------------------- |
@@ -149,7 +149,7 @@ The below tables indicate the the final values, of the metrics for all data: tra
 
 ![Iteration plot -2](https://user-images.githubusercontent.com/111590512/186219402-b5cc922a-5b68-425b-9825-4767311b22bc.png)
 
-### ETHICAL CONSIDERATIONS
+#### ETHICAL CONSIDERATIONS
 
 **1. Negative impacts of using the model:**
 
