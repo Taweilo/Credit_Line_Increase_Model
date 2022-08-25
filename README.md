@@ -159,21 +159,17 @@ The below tables indicate the the final values, of the metrics for all data: tra
 
 *Real world risks*
 
-
-
-
+It is safe to say that the model has been prepared on some level of gender and racial bias. Although more favourable in the gender bias, not so much in the racial bias. The model had to go through trial and testing of the best accuracy cutoff to avoid any legal breaches. In the calculations for AIR, a detailed understanding can be derived of how the model captures the racial biases wherein the hispanic and black population have a lower AIR as compared to whites and asians. This in turn tends to have an impact on the credit scores of these individuals which places them at a disdvantage while applying for mortgages and other essential loans. 
 
 ##### **2. Potential uncertainities relating to the impacts of using the model:**
 
 *Math or Software problems*
 
-
+As of date, it is understood that the model functions well for the dataset selected. But as we progress in time there is no assurance that the same model can be applied to the more relevant datasets that will be worked on in the present or future.
 
 *Real world risks*
 
-While the results of the data has provided with insightful understanding of credit increase and related biases in testing, it is important to note that there are some real world risks which have not been factored into the working. One such example would be that of security and privacy. In today's world data protection is one of the top priorities for any dataset that is being used for numerous purposes. This particular dataset is dense in information and contains confidential details such as demographic information, bill payments and loan balance payments. 
-
-##### **3. Unexpected results:**
+While the results of the data has provided with insightful understanding of credit increase and related biases in testing, it is important to note that there are some real world risks which have not been factored into the working. One such example would be that of security and privacy. In today's world data protection is one of the top priorities for any dataset that is being used for numerous purposes. This particular dataset is dense in information and contains confidential details such as demographic information, bill payments and loan balance payments. The effect of not taking into account the element of privacy and security, exposes the model to uncertainities. 
 
 
 ##### Sources:
