@@ -162,7 +162,7 @@ Not granting a credit line increase to a Hispanic or black person as compared to
 increase could potentially impact their credit scores. Eventually, credit scores further influence several decisions such as getting approved for credit cards,
 auto loans, home loans, and interest rates.
 
-#### **2. Potential uncertainities relating to the impacts of using the model:**
+#### **2. Potential uncertainties relating to the impacts of using the model:**
 
 *Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainity. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient strategies. Learning from new data, the up-to-date software and mathematical strategies empowers predictiveness over time.
 
