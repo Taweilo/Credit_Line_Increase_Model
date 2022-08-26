@@ -72,7 +72,7 @@ The credit line increase data was loaded via google collab file. Basic data anal
 
 #### **2.	Train a decision tree model**
 
-The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.Testing data which is a separate set of data is used to test the model after training, to help us determine how the model will perform in the real world. We trained 12 different models using decision trees and calculated the ROC AUC for each model. 
+The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model. Testing data which is a separate set of data is used to test the model after training, to help us determine how the model will perform in the real world. We trained 12 different models using decision trees and calculated the ROC AUC for each model. 
 
 ##### **AUC ROC**
 
@@ -122,14 +122,14 @@ exceeds the best scenario by 0.06. This indicates that a higher number of female
 
 #### **4.	Remediate discovered discrimination**
 
-According to an article by Pew Research Center, people who belong to Black and Hispanic racial groups face difficulty in home loans approved compared
+According to an article written by Pew Research Center, people who belong to Black and Hispanic racial groups face difficulty in home loans approved compared
 to White and Asian people. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants which can be also observed in our initial model. The biased behavior of ML models has adverse effects on society. With our initial probability cutoff of 0.15, the Hispanic-to-white AIR falls below the minimum acceptable value of 0.80 and the black-to-white AIR is just over 0.80 by 0.02.
 
 Notice that the cutoff may influence the result. Selecting the cutoff 0.18 rather than 0.15, we attempted to remediate biases by recalculating AIR and confusion matrices. Next, we re-did the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we went through 12 different models and observed the tradeoff between performance and fairness indicators. The model balanced between two factors was chosen. The below table shows that the AIR value of Hispanic-to-white and black-to-white was impacted positively after applying 0.18 of the cutoff rate.
 
 <img src ="https://user-images.githubusercontent.com/111590512/186556387-b9303204-196f-4491-b58e-a5148578ca60.jpg" width="250" height="200">
 
-The below tables indicate the final values, of the metrics for all data: training, validation, and test data
+The below table indicates the final value of the metrics for all data: training, validation, and test data.
 
 |  **Data Type**     |   **AUC**   | 
 | ----------------   | ----------- | 
