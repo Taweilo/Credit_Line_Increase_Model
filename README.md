@@ -72,11 +72,11 @@ The credit line increase data was loaded via google collab file. Basic data anal
 
 #### **2.	Train a decision tree model**
 
-The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.Testing data which is a separate set of data to test the model after training helps us determine how the model will perform in the real world. We trained 12 different models using decision trees and calculated the ROC AUC for each model. Plot tree depth vs training and validation AUC.
+The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.Testing data which is a separate set of data is used to test the model after training, to help us determine how the model will perform in the real world. We trained 12 different models using decision trees and calculated the ROC AUC for each model. 
 
 ##### **AUC ROC**
 
-The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in the performance measurement, one of the most important evaluation metrics to calibrate the classification model&#39;s performance. In short, the higher the AUC, the better the model can predict the next delinquent.
+The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in the performance measurement, one of the most important evaluation metrics to calibrate the classification model's performance. In short, the higher the AUC, the better the model can predict the next delinquent.
 
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
@@ -95,10 +95,10 @@ Lastly, we calculate test AUC.
 
 #### **3.	Test the model for discrimination**
 
-According to the article “A Combinatorial Approach to Fairness Testing of Machine Learning Models”, a machine learning model could exhibit biased behavior, or algorithmic discrimination, resulting in unfair or discriminatory outcomes. It is important to consider not only the performance of models but also ethical issues, such as fairness and security. 
+According to the article “A Combinatorial Approach to Fairness Testing of Machine Learning Models”, a machine learning model could exhibit biased behavior, or algorithmic discrimination, resulting in unfair or discriminatory outcomes. It is important to consider not only the performance of models but also ethical measures, such as fairness and security. 
 
 ##### **Adverse Impact Ratio (AIR)**
-The adverse impact ratio computes the negative effect a biased selection process has on protected groups. This is computed by dividing the protected group acceptance rate / controlled group acceptance rate.
+The adverse impact ratio computes the negative effect a biased selection process has on protected groups. This is computed by dividing the protected group acceptance rate by controlled group acceptance rate.
 
 AIR is associated with the convenient 4/5ths, or 0.8, cutoff threshold. AIR values below 0.8 can be considered evidence of illegal discrimination in many lending or employment scenarios in the U.S.
 
@@ -124,7 +124,8 @@ exceeds the best scenario by 0.06. This indicates that a higher number of female
 
 According to an article by Pew Research Center, people who belong to Black and Hispanic racial groups face difficulty in home loans approved compared
 to White and Asian people. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants which can be also observed in our initial model. The biased behavior of ML models has adverse effects on society. With our initial probability cutoff of 0.15, the Hispanic-to-white AIR falls below the minimum acceptable value of 0.80 and the black-to-white AIR is just over 0.80 by 0.02.
-Notice that the cutoff may influence the result. Selecting the cutoff 0.18 rather than 0.15, we attempted to remediate biases by recalculating AIR and confusion matrices. Next, we redid the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we went through 12 different models and observed the tradeoff between performance and fairness indicators. The model balanced between two factors was chosen. The below table shows that the AIR value of Hispanic-to-white and black-to-white was impacted positively after applying 0.18 of the cutoff rate.
+
+Notice that the cutoff may influence the result. Selecting the cutoff 0.18 rather than 0.15, we attempted to remediate biases by recalculating AIR and confusion matrices. Next, we re-did the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we went through 12 different models and observed the tradeoff between performance and fairness indicators. The model balanced between two factors was chosen. The below table shows that the AIR value of Hispanic-to-white and black-to-white was impacted positively after applying 0.18 of the cutoff rate.
 
 <img src ="https://user-images.githubusercontent.com/111590512/186556387-b9303204-196f-4491-b58e-a5148578ca60.jpg" width="250" height="200">
 
@@ -153,13 +154,11 @@ The below tables indicate the final values, of the metrics for all data: trainin
 
 #### **1. Negative impacts of using the model:**
 
-*Math or Software problems*: 
-
-
+*Math or Software problems*: After deploying the model, there can be a variety of issues related to data integrity, data drift, and server problems. The model in production will require constant monitoring for us to be in control of the product and detect issues early on. Additionally, it must be continuously evaluated for it's performance metrics.
 
 *Real world risks*: From the model and computed AIR values, it is safe to say that the models discrimination is not fully remediated. Using a biased model
 in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to individuals.
-Not granting a credit line increase to a Hispanic or black person could be a problem, compared to a White or Asian. In addition, denying a credit line
+Not granting a credit line increase to a Hispanic or black person as compared to a White or Asian, could be a problem. In addition, denying a credit line
 increase could potentially impact their credit scores. Eventually, credit scores further influence several decisions such as getting approved for credit cards,
 auto loans, home loans, and interest rates.
 
@@ -173,7 +172,7 @@ there are no potential uncertainties related to data security and privacy when u
 
 
 #### **3. Other unexpected results:**
-
+Real world data would certainly have missing values. However, our data does not have any missing values. From the variable importance chart, we can observe that the PAY_0 variable plays a critical role in the model. This means that the model heavily relies on the most recent payment instead of consistent payment history. Although the above unexpected results do not disqualify the model, it's important to be aware of them shall a problem emerge in the future. 
 
 
 
