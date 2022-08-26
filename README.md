@@ -65,19 +65,18 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ### QUANTATIVE ANALYSIS AND MODEL WORK FLOW
 
 #### **1.	Load and analyze data**
-
-The credit line increase data was loaded using google collab file upload. Basic data analysis was performed to identify as shape of data, get column names, find missing values, and generate descriptive statistics. Pearson correlation matrix was calculated to find pairwise correlation of the columns in data. All columns in the data are visually represented as histograms. A correlation heatmap figure is generated to represent the correlation matrix.
+The credit line increase data was loaded via google collab file. Basic data analysis was performed to identify the shape of data, get column names, find missing values, and generate descriptive statistics. The Pearson correlation matrix was calculated to find the pairwise correlation of the columns in the data. All columns in the data are visually represented as histograms. A correlation heatmap figure was generated to represent the correlation matrix.
 
 ##### Correlation Heatmap
 ![Heat Map](https://user-images.githubusercontent.com/111590512/185942386-95eece6c-45d5-483b-a582-e665e5cfa083.png)
 
 #### **2.	Train a decision tree model**
 
-The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.Testing data which is a separate set of data to test the model after training helps us determine how the model will perform in the real world. We train 12 different models using decision trees and calculate the ROC AUC for each model. Plot tree depth vs training and validation AUC.
+The data is partitioned into training, validation, and test sets (50%, 25%, 25% respectively) to accurately evaluate the model.Testing data which is a separate set of data to test the model after training helps us determine how the model will perform in the real world. We trained 12 different models using decision trees and calculated the ROC AUC for each model. Plot tree depth vs training and validation AUC.
 
 ##### **AUC ROC**
 
-The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in peformance measurement and is one of the most important evaluation metrics for checking any classification model's performance. In simple terms, the higher the AUC the better the model is at predicting between whether an individual would default on payment or pay on time.
+The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in the performance measurement, one of the most important evaluation metrics to calibrate the classification model&#39;s performance. In short, the higher the AUC, the better the model can predict the next delinquent.
 
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
@@ -96,7 +95,7 @@ Lastly, we calculate test AUC.
 
 #### **3.	Test the model for discrimination**
 
-According to the article, A Combinatorial Approach to Fairness Testing of Machine Learning Models, machine learning models could exhibit biased behavior, or algorithmic discrimination, resulting in unfair or discriminatory outcomes. It is importance to not only consider the performance of your model but also other factors such as fairness and security. 
+According to the article “A Combinatorial Approach to Fairness Testing of Machine Learning Models”, a machine learning model could exhibit biased behavior, or algorithmic discrimination, resulting in unfair or discriminatory outcomes. It is important to consider not only the performance of models but also ethical issues, such as fairness and security. 
 
 ##### **Adverse Impact Ratio (AIR)**
 The adverse impact ratio computes the negative effect a biased selection process has on protected groups. This is computed by dividing the protected group acceptance rate / controlled group acceptance rate.
@@ -105,9 +104,7 @@ AIR is associated with the convenient 4/5ths, or 0.8, cutoff threshold. AIR valu
 
 ##### **Racial bias**
 
-The protected groups for racial bias testing are hispanic, black and asian and the reference group is white. From our confusion matrices and AIR calculation, the 
-hispanic-to-white AIR is below the benchmark of 0.8. Although, the black-to-white impact ratio is greater than 0.80, there is room for improvement. According to the Office of Federal Contract Compliance Programs, the agency will require strong additional supporting evidence when the impact ratio is between 0.8 and 0.9
-The white-to-asian AIR of 1.0 is favorable. 
+The protected groups for racial bias testing are Hispanic, Black, and Asian. In addition, the reference group is white. From our confusion matrices and AIR calculation, the Hispanic-to-White AIR is below the benchmark of 0.8. Although the black-to-white impact ratio is greater than 0.80, the performance can be improved. According to the Office of Federal Contract Compliance Programs, the agency will require strong additional supporting evidence when the impact ratio is between 0.8 and 0.9. The White-to-Asian AIR is 1.0 and thus favorable. 
 
 ![White vs Hispanic1024_1](https://user-images.githubusercontent.com/111590512/186423198-297eacc1-f9dc-4728-a144-7f66d09321ac.jpg)
 
@@ -117,19 +114,17 @@ The white-to-asian AIR of 1.0 is favorable.
 
 ##### **Gender bias**
 
-The protected group for gender bias testing is female and reference group is male. The resulting AIR value is favourable for women as it exceeds the best case scenario by 0.6. This indicates that a higher number of females were awarded a loan as compared to males. The magnitude of the marginal effect is also relatively small, another sign that discrimination with respect to gender is low under the model.
+The protected group for gender bias testing is female, and the reference group is male. As a result, the AIR value is favorable for women because it
+exceeds the best scenario by 0.06. This indicates that a higher number of females were awarded a loan compared to males. The magnitude of the marginal effect is also relatively small. Another sign shows low gender discrimination within the model.
 
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186424070-ddc103f8-0ba1-4f75-a7be-493e52350635.jpg)
 
 
 #### **4.	Remediate discovered discrimination**
 
-According to an article by Pew Research Center, people who belong to Black and Hispanic racial groups face more difficulty in getting approved for home loans as compared to White and Asian people. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants which can be also observed in our initial model. 
-
-Biased behavior of ML models has adverse effects on society. With our initial probability cut off 0.15, the Hispanic-to-white AIR falls below the minimum acceptable value of 0.80 and the black-to-white AIR is just over 0.80 by 0.02.
-
-With our information, we can try to remediate biases by recalculating AIR and confusion matrices by pushing the cutoff from 0.15 to 0.18. Next, we redo the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we are going to try it across 12 different models and observe both performance and fairness indicators to pick a balance between the two.
-The below tables show how AIR values specifically for Hispanic-to-white and black-to-white are positively impacted after pushing the cutoff to 0.18
+According to an article by Pew Research Center, people who belong to Black and Hispanic racial groups face difficulty in home loans approved compared
+to White and Asian people. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants which can be also observed in our initial model. The biased behavior of ML models has adverse effects on society. With our initial probability cutoff of 0.15, the Hispanic-to-white AIR falls below the minimum acceptable value of 0.80 and the black-to-white AIR is just over 0.80 by 0.02.
+Notice that the cutoff may influence the result. Selecting the cutoff 0.18 rather than 0.15, we attempted to remediate biases by recalculating AIR and confusion matrices. Next, we redid the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we went through 12 different models and observed the tradeoff between performance and fairness indicators. The model balanced between two factors was chosen. The below table shows that the AIR value of Hispanic-to-white and black-to-white was impacted positively after applying 0.18 of the cutoff rate.
 
 <img src ="https://user-images.githubusercontent.com/111590512/186556387-b9303204-196f-4491-b58e-a5148578ca60.jpg" width="250" height="200">
 
@@ -162,14 +157,20 @@ The below tables indicate the final values, of the metrics for all data: trainin
 
 
 
-*Real world risks*: From the model and computed AIR values, it's safe to say that the model's discrimination is not fully remediated. Using a biased model in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to not grant a credit line increase to a hispanic or black person as compared to white or asian. Denying a credit line increase could potentially impact their credit scores and credit scores further influence several decisions such as getting approved for credit cards, auto loans, home loans, and interest rates. 
+*Real world risks*: From the model and computed AIR values, it is safe to say that the models discrimination is not fully remediated. Using a biased model
+in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to individuals.
+Not granting a credit line increase to a Hispanic or black person could be a problem, compared to a White or Asian. In addition, denying a credit line
+increase could potentially impact their credit scores. Eventually, credit scores further influence several decisions such as getting approved for credit cards,
+auto loans, home loans, and interest rates.
 
 #### **2. Potential uncertainities relating to the impacts of using the model:**
 
-*Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainity. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient mathematical strategies and up to date software to allow it to learn from new data and preserve it's predictiveness over time.  
+*Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainity. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient strategies. Learning from new data, the up-to-date software and mathematical strategies empowers predictiveness over time.
 
+*Real world risks*: While training the model has provided us with an insight of how biases affect credit line increase, real-world risks weren’t considered.
+Security and data privacy is one example. The risk of customer data being leaked and privacy attacks is not an aspect we have taken into consideration in our pipeline while training the model. This will expose the model to uncertainties. We would have to measure the risks and apply mitigation strategies to ensure
+there are no potential uncertainties related to data security and privacy when using the model.
 
-*Real world risks*: While training the model has provided us with an insight of how biases affect credit line increase, we have not factored in real-world risks. One such risk would be security and data privacy. The risk of customer data being leaked and privacy attacks is not an aspect we have taken into consideration in our pipeline while training the model and exposes it to uncertainities. We would have to measure the risks and apply migitation stratergies to ensure there are no potential uncertainities related to data security and privacy when using the model.
 
 #### **3. Other unexpected results:**
 
