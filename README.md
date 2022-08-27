@@ -6,7 +6,7 @@
  Ta Wei Lo "twlo@gwmail.gwu.edu" ; 
  Pranita Shetty "pranita1096@gwmail.gwu.edu"
 * **Model date**: August, 2022
-* **Model version**: 1.0
+* **Model version**: 1.0.2
 * **License**: MIT
 * **Model implementation code**: [DNSC6301_Project_Group18.ipynb](https://github.com/katamvarsha/GWU_DNSC6301_Project_Group18/blob/6f4d1389302d7cbec5b71e9f46090f638b966d26/DNSC6301_Project_Group18.ipynb)
 #### Intended Use
@@ -50,7 +50,7 @@
 * **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
 * **Type of model**: Decision Tree 
 * **Software used to implement the model**: Python, scikit-learn
-* **Version of the modeling software**: 0.22.2.post1
+* **Version of the modeling software**: 3.7.13, 1.0.2
 * **Hyperparameters or other settings of your model**: 
 ```
 DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
@@ -76,7 +76,7 @@ The data is partitioned into training, validation, and test sets (50%, 25%, 25% 
 
 ##### **AUC ROC**
 
-The AUC ( Area under the curve) ROC ( Receiver operating curve) curve assists in the performance measurement, one of the most important evaluation metrics to calibrate the classification model's performance. In short, the higher the AUC, the better the model can predict the next delinquent.
+The AUC (Area Under the Curve) for the ROC (Receiver Operating Characterstic) curve assists in the performance measurement, one of the most important evaluation metrics to calibrate the classification model's performance. In short, the higher the AUC, the better the model can predict the next delinquent paymemt.
 
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
@@ -115,7 +115,7 @@ The protected groups for racial bias testing are Hispanic, Black, and Asian. In 
 ##### **Gender bias**
 
 The protected group for gender bias testing is female, and the reference group is male. As a result, the AIR value is favorable for women because it
-exceeds the best scenario by 0.06. This indicates that a higher number of females were awarded a loan compared to males. The magnitude of the marginal effect is also relatively small. Another sign shows low gender discrimination within the model.
+exceeds the best scenario by 0.06. This indicates that a higher number of females were awarded a loan compared to males. 
 
 ![Male vs Femal-1](https://user-images.githubusercontent.com/111590512/186424070-ddc103f8-0ba1-4f75-a7be-493e52350635.jpg)
 
@@ -158,15 +158,15 @@ The below table indicates the final value of the metrics for all data: training,
 
 *Real world risks*: From the model and computed AIR values, it is safe to say that the models discrimination is not fully remediated. Using a biased model
 in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to individuals.
-Not granting a credit line increase to a Hispanic or black person as compared to a White or Asian, could be a problem. In addition, denying a credit line
+Not granting a credit line increase to a Hispanic or Black person as compared to a White or Asian, could be a problem. In addition, denying a credit line
 increase could potentially impact their credit scores. Eventually, credit scores further influence several decisions such as getting approved for credit cards,
 auto loans, home loans, and interest rates.
 
 #### **2. Potential uncertainties relating to the impacts of using the model:**
 
-*Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainity. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient strategies. Learning from new data, the up-to-date software and mathematical strategies empowers predictiveness over time.
+*Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainty. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient strategies. Learning from new data, the up-to-date software and mathematical strategies empowers predictiveness over time.
 
-*Real world risks*: While training the model has provided us with an insight of how biases affect credit line increase, real-world risks weren’t considered.
+*Real world risks*: While training the model has provided us with an insight of how biases affect credit line increase, some real-world risks weren’t considered.
 Security and data privacy is one example. The risk of customer data being leaked and privacy attacks is not an aspect we have taken into consideration in our pipeline while training the model. This will expose the model to uncertainties. We would have to measure the risks and apply mitigation strategies to ensure
 there are no potential uncertainties related to data security and privacy when using the model.
 
