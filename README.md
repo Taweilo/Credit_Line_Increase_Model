@@ -76,7 +76,7 @@ The data is partitioned into training, validation, and test sets (50%, 25%, 25% 
 
 ##### **AUC ROC**
 
-The AUC ROC (Area Under the Curve for the Receiver Operator Characteristic) assists in the performance measurement, one of the most important evaluation metrics to calibrate the classification model's performance. In short, the higher the AUC, the better the model can predict the next delinquent paymemt.
+The AUC ROC (Area Under the Curve for the Receiver Operator Characteristic) assists in the performance measurement, one of the most important evaluation metrics to calibrate the classification model's performance. In short, the higher the AUC, the better the model can predict the next delinquent payment.
 
 ![Iteration Plot - 1](https://user-images.githubusercontent.com/111590512/186211589-bea9419e-0285-4fd0-8ab4-b4d28db0d2c3.png)
 
