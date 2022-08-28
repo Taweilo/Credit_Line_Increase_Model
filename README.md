@@ -172,7 +172,7 @@ there are no potential uncertainties related to data security and privacy when u
 
 
 #### **3. Other unexpected results:**
-Real-world data would certainly have missing values. However, our data do not have any missing values. From the variable importance chart, we can observe that the PAY_0 variable plays a critical role in the model. This means that the model heavily relies on the most recent payment instead of consistent payment history. Although the above-unexpected results do not disqualify the model, it's important to be aware of them shall a problem emerge in the future. 
+Real-world data would certainly have missing values. However, our data do not have any missing value. From the variable importance chart, we can observe that the PAY_0 variable plays a critical role in the model. This means that the model heavily relies on the most recent payment instead of consistent payment history. Although the above-unexpected results do not disqualify the model, it's important to be aware of them shall a problem emerge in the future. 
 
 
 
