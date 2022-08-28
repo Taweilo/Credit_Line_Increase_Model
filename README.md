@@ -156,7 +156,7 @@ The below table indicates the final value of the metrics for all data: training,
 
 *Math or Software problems*: After deploying the model, there can be a variety of issues related to data integrity, data drift, and server problems. The model in production will require constant monitoring for us to be in control of the product and detect issues early on. Additionally, it must be continuously evaluated for it's performance metrics.
 
-*Real world risks*: From the model and computed AIR values, it is safe to say that the models discrimination is not fully remediated. Using a biased model
+*Real-world risks*: From the model and computed AIR values, it is safe to say that the models discrimination is not fully remediated. Using a biased model
 in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to individuals.
 Not granting a credit line increase to a Hispanic or Black person as compared to a White or Asian, could be a problem. In addition, denying a credit line
 increase could potentially impact their credit scores. Eventually, credit scores further influence several decisions such as getting approved for credit cards,
@@ -166,13 +166,13 @@ auto loans, home loans, and interest rates.
 
 *Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainty. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient strategies. Learning from new data, the up-to-date software and mathematical strategies empowers predictiveness over time.
 
-*Real world risks*: While training the model has provided us with an insight of how biases affect credit line increase, some real-world risks weren’t considered.
+*Real-world risks*: While training the model has provided us with an insight of how biases affect credit line increase, some real-world risks weren’t considered.
 Security and data privacy is one example. The risk of customer data being leaked and privacy attacks is not an aspect we have taken into consideration in our pipeline while training the model. This will expose the model to uncertainties. We would have to measure the risks and apply mitigation strategies to ensure
 there are no potential uncertainties related to data security and privacy when using the model.
 
 
 #### **3. Other unexpected results:**
-Real world data would certainly have missing values. However, our data does not have any missing values. From the variable importance chart, we can observe that the PAY_0 variable plays a critical role in the model. This means that the model heavily relies on the most recent payment instead of consistent payment history. Although the above unexpected results do not disqualify the model, it's important to be aware of them shall a problem emerge in the future. 
+Real-world data would certainly have missing values. However, our data do not have any missing values. From the variable importance chart, we can observe that the PAY_0 variable plays a critical role in the model. This means that the model heavily relies on the most recent payment instead of consistent payment history. Although the above-unexpected results do not disqualify the model, it's important to be aware of them shall a problem emerge in the future. 
 
 
 
