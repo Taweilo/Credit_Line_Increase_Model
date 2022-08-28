@@ -154,7 +154,7 @@ The below table indicates the final value of the metrics for all data: training,
 
 #### **1. Negative impacts of using the model:**
 
-*Math or Software problems*: After deploying the model, there can be a variety of issues related to data integrity, data drift, and server problems. The model in production will require constant monitoring for us to be in control of the product and detect issues early on. Additionally, it must be continuously evaluated for it's performance metrics.
+*Math or Software problems*: After deploying the model, there can be a variety of issues related to data integrity, data drift, and server problems. The model in production will require constant monitoring for us to be in control of the product and detect issues early on. Additionally, it must be continuously evaluated for its performance metrics.
 
 *Real-world risks*: From the model and computed AIR values, it is safe to say that the models discrimination is not fully remediated. Using a biased model
 in the real world could have a severe negative impact. In this case, there might be an instance where the model makes a biased decision to individuals.
@@ -164,9 +164,9 @@ auto loans, home loans, and interest rates.
 
 #### **2. Potential uncertainties relating to the impacts of using the model:**
 
-*Math or Software problems*: The model works as expected as of date. However with technology and software being ever-changing, it introduces some level of uncertainty. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient strategies. Learning from new data, the up-to-date software and mathematical strategies empowers predictiveness over time.
+*Math or Software problems*: The model works as expected as of date. However, with technology and software being ever-changing, it introduces some level of uncertainty. Model staleness is when the predictive power of a model depreciates over time as trends change. The model has to be refreshed over time with more efficient strategies. Learning from new data, the up-to-date software and mathematical strategies empower predictiveness over time.
 
-*Real-world risks*: While training the model has provided us with an insight of how biases affect credit line increase, some real-world risks weren’t considered.
+*Real-world risks*: While training the model has provided us with an insight into how biases affect credit line increase, some real-world risks weren’t considered.
 Security and data privacy is one example. The risk of customer data being leaked and privacy attacks is not an aspect we have taken into consideration in our pipeline while training the model. This will expose the model to uncertainties. We would have to measure the risks and apply mitigation strategies to ensure
 there are no potential uncertainties related to data security and privacy when using the model.
 
