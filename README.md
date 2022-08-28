@@ -104,7 +104,7 @@ AIR is associated with the convenient 4/5ths, or 0.8, cutoff threshold. AIR valu
 
 ##### **Racial bias**
 
-The protected groups for racial bias testing are Hispanic, Black, and Asian. In addition, the reference group is white. From our confusion matrices and AIR calculation, the Hispanic-to-White AIR is below the benchmark of 0.8. Although the black-to-white impact ratio is greater than 0.80, the performance can be improved. According to the Office of Federal Contract Compliance Programs, the agency will require strong additional supporting evidence when the impact ratio is between 0.8 and 0.9. The White-to-Asian AIR is 1.0 and thus favorable. 
+The protected groups for racial bias testing are Hispanic, Black, and Asian. In addition, the reference group is White. From our confusion matrices and AIR calculation, the Hispanic-to-White AIR is below the benchmark of 0.8. Although the Black-to-White impact ratio is greater than 0.80, the performance can be improved. According to the Office of Federal Contract Compliance Programs, the agency will require strong additional supporting evidence when the impact ratio is between 0.8 and 0.9. The White-to-Asian AIR is 1.0 and thus favorable. 
 
 ![White vs Hispanic1024_1](https://user-images.githubusercontent.com/111590512/186423198-297eacc1-f9dc-4728-a144-7f66d09321ac.jpg)
 
@@ -123,7 +123,7 @@ exceeds the best scenario by 0.06. This indicates that a higher number of female
 #### **4.	Remediate discovered discrimination**
 
 According to an article written by Pew Research Center, people who belong to Black and Hispanic racial groups face difficulty in home loans approved compared
-to White and Asian people. In 2015, 27.4% of black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of white and Asian applicants which can be also observed in our initial model. The biased behavior of ML models has adverse effects on society. With our initial probability cutoff of 0.15, the Hispanic-to-white AIR falls below the minimum acceptable value of 0.80 and the black-to-white AIR is just over 0.80 by 0.02.
+to White and Asian people. In 2015, 27.4% of the Black applicants and 19.2% of Hispanic applicants were denied mortgages, compared with about 11% of White and Asian applicants which can be also observed in our initial model. The biased behavior of ML models has adverse effects on society. With our initial probability cutoff of 0.15, the Hispanic-to-white AIR falls below the minimum acceptable value of 0.80 and the black-to-white AIR is just over 0.80 by 0.02.
 
 Notice that the cutoff may influence the result. Selecting the cutoff 0.18 rather than 0.15, we attempted to remediate biases by recalculating AIR and confusion matrics. Next, we re-did the model search by training decision trees with validation-based early stopping. Instead of picking the best model defined by AUC, we went through 12 different models and observed the tradeoff between performance and fairness indicators. The model balanced between two factors was chosen. The below table shows that the AIR value of Hispanic-to-white and black-to-white was impacted positively after applying 0.18 of the cutoff rate.
 
