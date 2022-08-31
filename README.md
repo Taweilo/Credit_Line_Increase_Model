@@ -8,7 +8,7 @@
 * **Model date**: August, 2022
 * **Model version**: 1.0.2
 * **License**: MIT
-* **Model implementation code**: [DNSC6301_Project_Group18.ipynb] (https://github.com/katamvarsha/GWU_DNSC6301_Project_Group18/blob/main/DNSC6301_Project_Group18.ipynb)
+* **Model implementation code**: (https://github.com/katamvarsha/GWU_DNSC6301_Project_Group18/blob/main/DNSC6301_Project_Group18.ipynb) [DNSC6301_Project_Group18.ipynb] 
 #### Intended Use
 * **Primary intended users**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
 * **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
