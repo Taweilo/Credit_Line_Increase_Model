@@ -1,4 +1,3 @@
-# GWU_DNSC6301_Project_Group18
 ## CREDIT LINE INCREASE MODEL CARD
 #### Basic Information
 * **People developing model**: 
